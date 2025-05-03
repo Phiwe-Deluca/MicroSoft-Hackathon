@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,11 +14,13 @@ function Navbar() {
       {menuOpen && (
         <nav className="bg-gray-800 text-white w-64 absolute top-16 left-0 p-4 rounded-md shadow-lg">
           <ul>
-            <li><a href="/dashboard" className="block hover:bg-gray-700 p-2 rounded-md">Dashboard</a></li>
-            <li><a href="/profile" className="block hover:bg-gray-700 p-2 rounded-md">Profile</a></li>
-            <li><a href="/diagnosis" className="block hover:bg-gray-700 p-2 rounded-md">Diagnosis</a></li>
-            <li><a href="/healthcare" className="block hover:bg-gray-700 p-2 rounded-md">Healthcare</a></li>
-            <li><a href="/resources" className="block hover:bg-gray-700 p-2 rounded-md">Resources</a></li>
+            <li><Link to="/dashboard" className="block hover:bg-gray-700 p-2 rounded-md">Dashboard</Link></li>
+            <li><Link to="/profile" className="block hover:bg-gray-700 p-2 rounded-md">Profile</Link></li>
+            <li><Link to="/diagnosis" className="block hover:bg-gray-700 p-2 rounded-md">Diagnosis</Link></li>
+            <li><Link to="/healthcare" className="block hover:bg-gray-700 p-2 rounded-md">Healthcare</Link></li>
+            <li><Link to="/resources" className="block hover:bg-gray-700 p-2 rounded-md">Resources</Link></li>
+            <li><Link to="/login" className="block hover:bg-gray-700 p-2 rounded-md">Login</Link></li>
+            <li><Link to="/chatbot" className="block hover:bg-gray-700 p-2 rounded-md">Chatbot</Link></li>
           </ul>
         </nav>
       )}

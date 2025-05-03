@@ -27,7 +27,7 @@ function Diagnosis() {
   // Submit AI Diagnosis
   const submitDiagnosis = () => {
     setRiskLevel("Processing... AI analysis in progress.");
-    
+
     // Simulated AI processing delay
     setTimeout(() => {
       const riskLevels = ["Low", "Medium", "High"];

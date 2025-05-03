@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 
-function Home() {
+function LandingPage() {
   // State to toggle navigation menu
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -31,4 +31,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default LandingPage;

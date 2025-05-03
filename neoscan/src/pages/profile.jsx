@@ -7,7 +7,7 @@ import InputField from "../components/InputField";
 
 function Profile() {
   const [name, setName] = useState("Harriet Tubman");
-  const [email, setEmail] = useState("fak@example.com");
+  const [email, setEmail] = useState("fake@example.com");
   const [bio, setBio] = useState("Cancer awareness advocate");
   const [profilePic, setProfilePic] = useState("default-avatar.png");
   const navigate = useNavigate();
