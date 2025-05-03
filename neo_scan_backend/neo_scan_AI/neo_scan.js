@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import * as dotenv from "dotenv";
-import { AzureOpenAI } from "openai";
+import { AzureOpenAI } from "openai/index.mjs";
 
 dotenv.config();
 
