@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | NeoScan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <h2>User Profile</h2>
+
+        <!-- Profile Picture -->
+        <div class="profile-pic">
+            <img src="default-avatar.png" alt="Profile Picture">
+            <input type="file" id="uploadPic">
+        </div>
+
+        <!-- User Info -->
+        <form id="profileForm">
+            <input type="text" placeholder="Full Name" value="
+            Harriet Tubman" required>
+            <input type="email" placeholder="Email Address" value="fak@example.com" required>
+            <textarea placeholder="Bio">Cancer awareness advocate</textarea>
+            <button type="submit">Save Changes</button>
+        </form>
+
+        <!-- Settings -->
+        <button class="logout-btn" onclick="logoutUser()">Log Out</button>
+    </div>
+
+    <script>
+        function logoutUser() {
+            alert("You have been logged out.");
+            window.location.href = "index.html"; // Redirect to home page after logout
+        }
+    </script>
+
+</body>
+</html>

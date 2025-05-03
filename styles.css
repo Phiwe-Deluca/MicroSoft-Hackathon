@@ -1,0 +1,157 @@
+/* 🔹 Universal Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0044cc, #00a651); /* Sleek Blue & Green Gradient */
+    color: white;
+    text-align: center;
+}
+
+/* 🔹 Glossy Header */
+header {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: rgba(255, 165, 0, 0.8); /* Orange hover effect */
+}
+
+/* 🔹 Language Selector */
+#language {
+    background: white;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+/* 🔹 Welcome Section */
+.welcome {
+    margin: 40px auto;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.4);
+}
+
+/* 🔹 Glossy Buttons */
+button {
+    background: linear-gradient(to right, #ff6200, #ff8c00); /* Orange glossy button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff8c00, #ffaa33);
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.4);
+}
+
+/* 🔹 Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px -4px 10px rgba(0,0,0,0.5);
+}
+
+/* 🔹 Diagnosis Section */
+.diagnosis-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+    color: black;
+}
+
+/* 🔹 Input Fields */
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f0f8ff;
+    box-shadow: inset 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 🔹 Health Resources Section */
+.resources-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+    color: black;
+}
+
+.resource-links a {
+    display: block;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    margin: 6px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.resource-links a:hover {
+    background: #0056b3;
+}
+
+/* 🔹 Video Section */
+.video-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* 🔹 Articles List */
+.articles-list li {
+    list-style-type: none;
+    padding: 8px;
+}
+
+.articles-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.articles-list a:hover {
+    text-decoration: underline;
+}

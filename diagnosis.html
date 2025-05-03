@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Diagnosis | NeoScan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="diagnosis-container">
+        <h2>AI-Powered Diagnosis</h2>
+        <p>Upload an image and describe your symptoms for AI analysis.</p>
+
+        <!-- Image Upload Section -->
+        <label for="imageUpload">Upload Image:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+
+        <!-- Text-Based Symptom Description (Voice-Enabled) -->
+        <textarea id="symptoms" placeholder="Describe your symptoms..."></textarea>
+        <button onclick="startVoiceRecognition()">🎤 Speak</button>
+
+        <!-- Submit Button -->
+        <button id="submitDiagnosis">Submit for AI Analysis</button>
+
+        <!-- Results Display -->
+        <div id="results">
+            <h3>AI Risk Assessment:</h3>
+            <p id="riskLevel">Awaiting results...</p>
+
+            <a href="landingpage.html">Home</a>
+
+        </div>
+    </div>
+
+    <script>
+        function startVoiceRecognition() {
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.onresult = function(event) {
+                document.getElementById("symptoms").value = event.results[0][0].transcript;
+            };
+            recognition.start();
+        }
+
+        document.getElementById("submitDiagnosis").addEventListener("click", function() {
+            document.getElementById("riskLevel").textContent = "Processing... AI analysis in progress.";
+            // Simulated AI result display (replace with actuall ai api)
+            setTimeout(() => {
+                document.getElementById("riskLevel").textContent = "Risk Level: Medium. Please consult a healthcare professional.";
+            }, 3000);
+        });
+    </script>
+
+<footer>
+    <p>© 2025 NeoScan - Your AI-Powered Health Companion</p>
+</footer>
+
+
+</body>
+</html>

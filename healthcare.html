@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Healthcare Professionals | NeoScan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+</head>
+<body>
+
+    <div class="healthcare-container">
+        <h2>Find Nearby Hospitals & Clinics</h2>
+        <p>Search for verified healthcare professionals and schedule telehealth appointments.</p>
+
+        <!-- Google Maps Display -->
+        <div id="map"></div>
+        <button onclick="findHospitals()">Find Hospitals Near Me</button>
+
+        <!-- Telehealth Appointment Section -->
+        <h3>Schedule a Telehealth Appointment</h3>
+        <form id="appointmentForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="date" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+    <script>
+        function initMap() {
+            const mapOptions = {
+                center: { lat: -26.2041, lng: 28.0473 }, // Johannesburg Default Center
+                zoom: 12
+            };
+            const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+            window.map = map; // Store map globally
+        }
+
+        function findHospitals() {
+            const service = new google.maps.places.PlacesService(window.map);
+            const request = {
+                location: window.map.getCenter(),
+                radius: 5000,
+                type: ["hospital"]
+            };
+
+            service.nearbySearch(request, function(results, status) {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    results.forEach(place => {
+                        new google.maps.Marker({
+                            position: place.geometry.location,
+                            map: window.map,
+                            title: place.name
+                        });
+                    });
+                }
+            });
+        }
+
+        window.onload = initMap;
+    </script>
+    <a href="landingpage.html">Home</a>
+    //AIzaSyBRIxwh9NOopIuOOZNEXvEiM-GelpXSvaY 
+
+</body>
+</html>
