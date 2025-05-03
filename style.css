@@ -1,4 +1,4 @@
-/* 🔹 Universal Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #0044cc, #00a651); /* Deep Blue & Green Gradient */
@@ -10,7 +10,6 @@ body {
     color: white;
 }
 
-/* 🔹 Glossy Card-Like Containers */
 .container {
     background: linear-gradient(145deg, #ffffff, #dce5ec); /* Glossy white surface */
     padding: 30px;
@@ -20,7 +19,6 @@ body {
     width: 350px;
 }
 
-/* 🔹 Headings */
 h2 {
     margin-bottom: 15px;
     font-size: 24px;
@@ -28,7 +26,7 @@ h2 {
     color: #0044cc;
 }
 
-/* 🔹 Input Fields */
+/*  Input Fields */
 input {
     width: 100%;
     padding: 12px;
@@ -39,7 +37,7 @@ input {
     box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1);
 }
 
-/* 🔹 Glossy Buttons */
+
 button {
     background: linear-gradient(to right, #ff6200, #ff8c00); /* Orange Glossy Button */
     color: white;
@@ -59,7 +57,7 @@ button:hover {
     box-shadow: 5px 5px 12px rgba(0,0,0,0.3);
 }
 
-/* 🔹 Links */
+/* Links */
 a {
     color: #0044cc;
     text-decoration: none;
@@ -70,7 +68,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* 🔹 Chatbot Styling */
+/*  Chatbot Styling */
 .chatbot-container {
     background: white;
     padding: 20px;
@@ -81,14 +79,14 @@ a:hover {
     color: black;
 }
 
-/* 🔹 Chatbox */
+/*  Chatbox */
 #chatbox {
     background: rgba(240, 248, 255, 0.7);
     padding: 15px;
     border-radius: 8px;
 }
 
-/* 🔹 Footer */
+/*  Footer */
 footer {
     background: rgba(0,0,0,0.7);
     padding: 10px;

@@ -1,4 +1,3 @@
-/* 🔹 Universal Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,7 +7,7 @@ body {
     text-align: center;
 }
 
-/* 🔹 Glossy Header */
+/* Header */
 header {
     background: rgba(0, 0, 0, 0.85);
     padding: 20px;
@@ -35,7 +34,7 @@ nav a:hover {
     background: rgba(255, 165, 0, 0.8); /* Orange hover effect */
 }
 
-/* 🔹 Language Selector */
+/* Language Selector */
 #language {
     background: white;
     border: none;
@@ -43,7 +42,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* 🔹 Welcome Section */
 .welcome {
     margin: 40px auto;
     width: 60%;
@@ -53,7 +51,6 @@ nav a:hover {
     box-shadow: 0px 6px 12px rgba(0,0,0,0.4);
 }
 
-/* 🔹 Glossy Buttons */
 button {
     background: linear-gradient(to right, #ff6200, #ff8c00); /* Orange glossy button */
     color: white;
@@ -72,7 +69,7 @@ button:hover {
     box-shadow: 5px 5px 12px rgba(0,0,0,0.4);
 }
 
-/* 🔹 Footer */
+/* Footer */
 footer {
     position: absolute;
     bottom: 0;
@@ -85,7 +82,7 @@ footer {
     box-shadow: 0px -4px 10px rgba(0,0,0,0.5);
 }
 
-/* 🔹 Diagnosis Section */
+/*  Diagnosis Section */
 .diagnosis-container {
     background: white;
     padding: 20px;
@@ -96,7 +93,7 @@ footer {
     color: black;
 }
 
-/* 🔹 Input Fields */
+/* Input Fields */
 input, textarea {
     width: 90%;
     padding: 12px;
@@ -107,7 +104,7 @@ input, textarea {
     box-shadow: inset 2px 2px 6px rgba(0,0,0,0.1);
 }
 
-/* 🔹 Health Resources Section */
+/* Health Resources Section */
 .resources-container {
     background: white;
     padding: 20px;
@@ -133,7 +130,7 @@ input, textarea {
     background: #0056b3;
 }
 
-/* 🔹 Video Section */
+/*Video Section */
 .video-section {
     display: flex;
     justify-content: center;
@@ -141,7 +138,7 @@ input, textarea {
     flex-wrap: wrap;
 }
 
-/* 🔹 Articles List */
+/* Articles List */
 .articles-list li {
     list-style-type: none;
     padding: 8px;
