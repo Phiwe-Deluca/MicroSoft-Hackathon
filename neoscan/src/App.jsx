@@ -4,13 +4,13 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Chatbot from "./pages/Chatbot";
 import Dashboard from "./pages/Dashbot";
-import Diagnosis from "./pages/Diagnosis";
-import Healthcare from "./pages/Healthcare";
-import LandingPage from "./pages/Landingpage";
-import Login from "./pages/Login";
-import Profile from "./pages/Profile";
-import Resources from "./pages/Resources";
-import Signup from "./pages/Signup";
+import Diagnosis from "./pages/diagnosis";
+import Healthcare from "./pages/healthcare";
+import LandingPage from "./pages/landingpage";
+import Login from "./pages/login";
+import Profile from "./pages/profile";
+import Resources from "./pages/resources";
+import Signup from "./pages/signup";
 
 function App() {
   return (

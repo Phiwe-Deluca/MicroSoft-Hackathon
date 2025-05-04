@@ -12,7 +12,7 @@ const Chat = () => {
     const response = await fetch("http://localhost:5000/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userMessage, language }),
+      body: JSON.stringify({ userMessage }),
     });
 
     const data = await response.json();
@@ -38,7 +38,12 @@ const Chat = () => {
 
       <div className="chat-window">
         {messages.map((msg, index) => (
-          <div key={index} className={`text-left ${msg.user ? "text-blue-500" : "text-green-500"}`}>
+          <div
+            key={index}
+            className={`text-left ${
+              msg.user ? "text-blue-500" : "text-green-500"
+            }`}
+          >
             <strong>{msg.user ? "You:" : "Bot:"}</strong> {msg.user || msg.bot}
           </div>
         ))}

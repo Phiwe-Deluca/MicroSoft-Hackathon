@@ -1,4 +1,0 @@
-# Ignore environment files
-.env
-config.json
-api_keys.json
