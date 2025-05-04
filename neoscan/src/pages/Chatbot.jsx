@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import InputField from "../components/InputField";
 import Button from "../components/Button";
+import Chat from "../components/Chat"; // Import Chat
 
 function Chatbot() {
   const [messages, setMessages] = useState([]);
@@ -34,11 +35,14 @@ function Chatbot() {
         ))}
       </div>
 
-      {/* Chat Input */}
+      {/* Chat Input
       <div className="flex space-x-2">
         <InputField type="text" placeholder="Type your message..." value={input} onChange={(e) => setInput(e.target.value)} />
         <Button text="Send" color="bg-blue-500 text-white" onClick={handleSendMessage} />
-      </div>
+      </div> */}
+
+      {/* Chat Component */}
+      <Chat />
 
       {/* Footer */}
       <Footer />
